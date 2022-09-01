@@ -30,6 +30,10 @@ public class test {
         assertEquals("VI", convertToRoman(6));
     }
 
+    @Test
+    void tenToX() {
+        assertEquals("X", convertToRoman(10));
+    }
 
     private String convertToRoman(int number) {
         String value = "";
