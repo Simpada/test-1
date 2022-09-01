@@ -73,6 +73,10 @@ public class test {
         assertEquals("XLIX", convertToRoman(49));
     }
 
+    @Test
+    void hundred() {
+        assertEquals("C", convertToRoman(100));
+    }
 
     private String convertToRoman(int number) {
         String value = "";
