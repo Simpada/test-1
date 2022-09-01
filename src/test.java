@@ -121,62 +121,29 @@ public class test {
     private String convertToRoman(int number) {
         StringBuilder value = new StringBuilder();
 
-        while (number >= 1000) {
-            value.append("M");
-            number -= 1000;
-        }
-        if (number >= 900) {
-            value.append("CM");
-            number -= 900;
-        }
+        number = convertDigit(value, number, 1000, "M");
+        number = convertDigit(value, number, 900, "CM");
+        number = convertDigit(value, number, 500, "D");
+        number = convertDigit(value, number, 400, "CD");
+        number = convertDigit(value, number, 100, "C");
+        number = convertDigit(value, number, 90, "XC");
+        number = convertDigit(value, number, 50, "L");
+        number = convertDigit(value, number, 40, "XL");
+        number = convertDigit(value, number, 10, "X");
+        number = convertDigit(value, number, 9, "IX");
+        number = convertDigit(value, number, 5, "V");
+        number = convertDigit(value, number, 4, "IV");
+        convertDigit(value, number, 1, "I");
 
-        if (number >= 500) {
-            value.append("D");
-            number -= 500;
-        } else if (number >= 400) {
-            value.append("CD");
-            number -= 400;
-        }
-
-        while (number >= 100) {
-            value.append("C");
-            number -= 100;
-        }
-        if (number >= 90) {
-            value.append("XC");
-            number -= 90;
-        }
-
-        if (number >= 50) {
-            value.append("L");
-            number -= 50;
-        } else if (number >= 40) {
-            value.append("XL");
-            number -= 40;
-        }
-
-        while (number >= 10) {
-            value.append("X");
-            number -= 10;
-        }
-        if (number == 9) {
-            value.append("IX");
-            number -= 9;
-        }
-
-        if (number >= 5) {
-            value.append("V");
-            number -= 5;
-        } else if (number == 4) {
-            value.append("IV");
-            number -= 4;
-        }
-
-        while (number >= 1) {
-            value.append("I");
-            number -= 1;
-        }
         return value.toString();
+    }
+
+    private int convertDigit(StringBuilder value, int number, int digitValue, String digitSymbol) {
+        while (number >= digitValue) {
+            value.append(digitSymbol);
+            number -= digitValue;
+        }
+        return number;
     }
 
 }
