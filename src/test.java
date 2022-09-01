@@ -88,6 +88,12 @@ public class test {
         assertEquals("D", convertToRoman(500));
     }
 
+    @Test
+    void fourHundred() {
+        assertEquals("CD", convertToRoman(400));
+    }
+
+
     private String convertToRoman(int number) {
         String value = "";
 
