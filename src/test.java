@@ -10,6 +10,11 @@ public class test {
         assertTrue(convertToRoman(1) == "I");
     }
 
+    @Test
+    void twoToII(){
+        assertTrue(convertToRoman(2) == "II");
+    }
+
     private String convertToRoman(int number) {
         return "I";
     }
