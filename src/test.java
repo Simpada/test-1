@@ -7,16 +7,20 @@ public class test {
 
     @Test
     void oneToI () {
-        assertTrue(convertToRoman(1) == "I");
+        assertEquals("I", convertToRoman(1));
     }
 
     @Test
     void twoToII(){
-        assertTrue(convertToRoman(2) == "II");
+        assertEquals("II", convertToRoman(2));
     }
 
     private String convertToRoman(int number) {
-        return "I";
+        String value = "";
+        for (int i = 0; i < number; i++) {
+            value += "I";
+        }
+        return value;
     }
 
 }
