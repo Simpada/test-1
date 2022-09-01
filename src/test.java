@@ -97,6 +97,11 @@ public class test {
         assertEquals("M", convertToRoman(1000));
     }
 
+    @Test
+    void nineHundred(){
+        assertEquals("CM", convertToRoman(900));
+    }
+
 
     private String convertToRoman(int number) {
         String value = "";
