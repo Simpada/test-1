@@ -172,8 +172,9 @@ public class test {
             number -= 4;
         }
 
-        for (int i = 0; i < number; i++) {
+        while (number >= 1) {
             value.append("I");
+            number -= 1;
         }
         return value.toString();
     }
