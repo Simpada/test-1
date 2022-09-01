@@ -30,14 +30,17 @@ public class test {
         assertEquals("VI", convertToRoman(6));
     }
 
+
     private String convertToRoman(int number) {
-        if(number == 5){
-            return "V";
+        String value = "";
+
+        if(number >= 5){
+            value += "V";
+            number -= 5;
         } else if (number == 4) {
             return "IV";
         }
 
-        String value = "";
         for (int i = 0; i < number; i++) {
             value += "I";
         }
