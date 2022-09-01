@@ -83,6 +83,11 @@ public class test {
         assertEquals("XC", convertToRoman(90));
     }
 
+    @Test
+    void fiveHundred() {
+        assertEquals("D", convertToRoman(500));
+    }
+
     private String convertToRoman(int number) {
         String value = "";
 
@@ -95,7 +100,6 @@ public class test {
             number -= 90;
         }
 
-        // If value +1 is divisible by 10/5 etc. add I
         if(number >= 50){
             value += "L";
             number -= 50;
