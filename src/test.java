@@ -46,6 +46,8 @@ public class test {
         if (number >= 10) {
             value += "X";
             number -= 10;
+        } else if(number == 9){
+            return "IX";
         }
 
         if(number >= 5){
