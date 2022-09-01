@@ -40,6 +40,18 @@ public class test {
         assertEquals("IX", convertToRoman(9));
     }
 
+    @Test
+    void fifteenToXV(){
+        assertEquals("XV", convertToRoman(15));
+
+    }
+
+    @Test
+    void fourteen(){
+        assertEquals("XIV", convertToRoman(14));
+    }
+
+
     private String convertToRoman(int number) {
         String value = "";
 
@@ -65,5 +77,5 @@ public class test {
 
 }
 
-//micro penis
+//ekstrem micro penis
 
