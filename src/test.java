@@ -35,6 +35,11 @@ public class test {
         assertEquals("X", convertToRoman(10));
     }
 
+    @Test
+    void nineToIX() {
+        assertEquals("IX", convertToRoman(9));
+    }
+
     private String convertToRoman(int number) {
         String value = "";
 
