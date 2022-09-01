@@ -6,7 +6,7 @@ public class test {
 
 
     @Test
-    void oneToI () {
+    void oneToI() {
         assertEquals("I", convertToRoman(1));
     }
 
@@ -21,6 +21,10 @@ public class test {
     }
 
     private String convertToRoman(int number) {
+        if(number == 5){
+            return "V";
+        }
+
         String value = "";
         for (int i = 0; i < number; i++) {
             value += "I";
@@ -30,4 +34,5 @@ public class test {
 
 }
 
-//liten penis
+//større penis
+
