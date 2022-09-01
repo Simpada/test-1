@@ -4,52 +4,51 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class test {
 
-
     @Test
-    void oneToI () {
+    void one () {
         assertEquals("I", convertToRoman(1));
     }
 
     @Test
-    void twoToII(){
+    void two(){
         assertEquals("II", convertToRoman(2));
     }
 
     @Test
-    void fiveToV() {
+    void five() {
         assertEquals("V", convertToRoman(5));
     }
 
     @Test
-    void fourtoIV() {
+    void four() {
         assertEquals("IV", convertToRoman(4));
     }
 
     @Test
-    void sixToVI() {
+    void six() {
         assertEquals("VI", convertToRoman(6));
     }
 
     @Test
-    void tenToX() {
+    void ten() {
         assertEquals("X", convertToRoman(10));
     }
 
     @Test
-    void nineToIX() {
+    void nine() {
         assertEquals("IX", convertToRoman(9));
     }
 
     @Test
-    void fifteenToXV(){
+    void fifteen(){
         assertEquals("XV", convertToRoman(15));
-
     }
 
     @Test
     void fourteen(){
         assertEquals("XIV", convertToRoman(14));
     }
+
 
 
     private String convertToRoman(int number) {
