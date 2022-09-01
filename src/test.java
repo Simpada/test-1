@@ -55,18 +55,22 @@ public class test {
     private String convertToRoman(int number) {
         String value = "";
 
+        // If value +1 is divisible by 10/5 etc. add I
+
         if (number >= 10) {
             value += "X";
             number -= 10;
         } else if(number == 9){
-            return "IX";
+            value += "IX";
+            number -= 9;
         }
 
         if(number >= 5){
             value += "V";
             number -= 5;
         } else if (number == 4) {
-            return "IV";
+            value += "IV";
+            number -= 4;
         }
 
         for (int i = 0; i < number; i++) {
@@ -77,5 +81,5 @@ public class test {
 
 }
 
-//ekstrem micro penis
+//huge slong
 
