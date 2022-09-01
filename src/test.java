@@ -78,9 +78,15 @@ public class test {
         assertEquals("C", convertToRoman(100));
     }
 
+
+
     private String convertToRoman(int number) {
         String value = "";
 
+        while (number >= 100){
+            value += "C";
+            number -= 100;
+        }
         // If value +1 is divisible by 10/5 etc. add I
         if(number >= 50){
             value += "L";
