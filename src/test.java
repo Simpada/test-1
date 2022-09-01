@@ -102,6 +102,12 @@ public class test {
         assertEquals("CM", convertToRoman(900));
     }
 
+    @Test
+    void ultimateTest(){
+        assertEquals("MCMXCVI", convertToRoman(1996));
+        assertEquals("MCMXCIX", convertToRoman(1999));
+    }
+
 
     private String convertToRoman(int number) {
         String value = "";
