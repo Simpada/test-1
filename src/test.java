@@ -68,6 +68,10 @@ public class test {
         String value = "";
 
         // If value +1 is divisible by 10/5 etc. add I
+        if(number >= 50){
+            value += "L";
+            number -= 50;
+        }
 
         while (number >= 10) {
             value += "X";
