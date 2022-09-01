@@ -25,6 +25,11 @@ public class test {
         assertEquals("IV", convertToRoman(4));
     }
 
+    @Test
+    void sixToVI() {
+        assertEquals("VI", convertToRoman(6));
+    }
+
     private String convertToRoman(int number) {
         if(number == 5){
             return "V";
