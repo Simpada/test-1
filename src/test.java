@@ -100,6 +100,9 @@ public class test {
         if(number >= 500){
             value += "D";
             number -= 500;
+        } else if (number >= 400) {
+            value += "CD";
+            number -= 400;
         }
 
         while (number >= 100){
