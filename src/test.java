@@ -54,6 +54,11 @@ public class test {
         assertEquals("XIX", convertToRoman(19));
     }
 
+    @Test
+    void twenty(){
+        assertEquals("XX", convertToRoman(20));
+    }
+
     private String convertToRoman(int number) {
         String value = "";
 
