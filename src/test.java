@@ -90,6 +90,11 @@ public class test {
             value += "C";
             number -= 100;
         }
+        if (number >= 90) {
+            value += "XC";
+            number -= 90;
+        }
+
         // If value +1 is divisible by 10/5 etc. add I
         if(number >= 50){
             value += "L";
