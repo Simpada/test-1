@@ -110,6 +110,10 @@ public class test {
             value += "M";
             number -= 1000;
         }
+        if (number >= 900) {
+            value += "CM";
+            number -= 900;
+        }
 
         if(number >= 500){
             value += "D";
