@@ -15,6 +15,11 @@ public class test {
         assertEquals("II", convertToRoman(2));
     }
 
+    @Test
+    void fiveToV() {
+        assertEquals("V", convertToRoman(5));
+    }
+
     private String convertToRoman(int number) {
         String value = "";
         for (int i = 0; i < number; i++) {
