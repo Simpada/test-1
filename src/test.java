@@ -38,6 +38,11 @@ public class test {
     private String convertToRoman(int number) {
         String value = "";
 
+        if (number >= 10) {
+            value += "X";
+            number -= 10;
+        }
+
         if(number >= 5){
             value += "V";
             number -= 5;
