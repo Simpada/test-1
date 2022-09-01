@@ -91,6 +91,11 @@ public class test {
     private String convertToRoman(int number) {
         String value = "";
 
+        if(number >= 500){
+            value += "D";
+            number -= 500;
+        }
+
         while (number >= 100){
             value += "C";
             number -= 100;
