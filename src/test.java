@@ -68,6 +68,11 @@ public class test {
     void forty(){
         assertEquals("XL", convertToRoman(40));
     }
+    @Test
+    void fortyNine(){
+        assertEquals("XLIX", convertToRoman(49));
+    }
+
 
     private String convertToRoman(int number) {
         String value = "";
@@ -76,6 +81,9 @@ public class test {
         if(number >= 50){
             value += "L";
             number -= 50;
+        } else if (number >= 40) {
+            value += "XL";
+            number -= 40;
         }
 
         while (number >= 10) {
