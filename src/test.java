@@ -119,63 +119,63 @@ public class test {
 
 
     private String convertToRoman(int number) {
-        String value = "";
+        StringBuilder value = new StringBuilder();
 
         while (number >= 1000) {
-            value += "M";
+            value.append("M");
             number -= 1000;
         }
         if (number >= 900) {
-            value += "CM";
+            value.append("CM");
             number -= 900;
         }
 
         if (number >= 500) {
-            value += "D";
+            value.append("D");
             number -= 500;
         } else if (number >= 400) {
-            value += "CD";
+            value.append("CD");
             number -= 400;
         }
 
         while (number >= 100) {
-            value += "C";
+            value.append("C");
             number -= 100;
         }
         if (number >= 90) {
-            value += "XC";
+            value.append("XC");
             number -= 90;
         }
 
         if (number >= 50) {
-            value += "L";
+            value.append("L");
             number -= 50;
         } else if (number >= 40) {
-            value += "XL";
+            value.append("XL");
             number -= 40;
         }
 
         while (number >= 10) {
-            value += "X";
+            value.append("X");
             number -= 10;
         }
         if (number == 9) {
-            value += "IX";
+            value.append("IX");
             number -= 9;
         }
 
         if (number >= 5) {
-            value += "V";
+            value.append("V");
             number -= 5;
         } else if (number == 4) {
-            value += "IV";
+            value.append("IV");
             number -= 4;
         }
 
         for (int i = 0; i < number; i++) {
-            value += "I";
+            value.append("I");
         }
-        return value;
+        return value.toString();
     }
 
 }
