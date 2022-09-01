@@ -64,7 +64,7 @@ public class test {
 
         // If value +1 is divisible by 10/5 etc. add I
 
-        if (number >= 10) {
+        while (number >= 10) {
             value += "X";
             number -= 10;
         }
